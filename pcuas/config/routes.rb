@@ -23,6 +23,10 @@ Rails.application.routes.draw do
   get 'signup.html.erb' => 'application#signup'
   get 'transcripts_and_documents.html.erb' => 'application#transcripts_and_documents'
   get 'index.html.erb' => 'application#index'
+  get 'index' => 'application#index'
+
+  get '/logout' => 'application#loguout'
+  get '/login' => 'application#login'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

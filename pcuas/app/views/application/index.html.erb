@@ -1,39 +1,21 @@
-	<head>
-
-		<!--JQUERY-->
-		<script type="text/javascript" src="Libraries/jquery-1.11.2.min.js"></script>
-
-		<!--SELF (DONT TOUCH THIS)-->
-		<link rel="stylesheet" type="text/css" href="app/assets/stylesheets/style.css">
-		<!--STYLE IN THIS CSS-->
-		<link rel="stylesheet" type="text/css" href="app/assets/stylesheets/index.css">
-		
-		<script src="js/prefixfree.min.js"></script>
-		<title>Log In</title>
-	</head>
 	<body>
+
 		<a href="signup.html.erb" class="signup-button">Sign Up</a>
 		
 		
 		<div class="login">
 			<label class="main-title1">Animo-app.ly9</label><br><br><br><br>
-			<form action="home.html">
+			<form action="home.html.erb">
 				<input type="text" placeholder="username" name="user"><br>
 				<input type="password" placeholder="password" name="password"><br>
-				<a href="home.html.erb"><input type="submit" value="Login"></a>
+				<a href="home"><input type="submit" value="Login"></a>
 			</form>
 			
 				
 			<img class="bg">
-			<%=image_tag ("login-ribbon.png") {:class => "banner"} %>
+			<%=image_tag("login-ribbon.png")%>
+
 		</div>
 			
 	
-
-		<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-		
-		
-		
-		
-
 	</body>
